@@ -115,7 +115,7 @@ main {
             word-spacing: 2px;
         }
 
-        >audio {
+        >.audio {
             margin-top: 70px;
             width: 95%;
         }
