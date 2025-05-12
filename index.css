@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 30px 100px;
+    background-color: rgb(80, 67, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+    >div.logo {
+        font: bold 2em 'Arial';
+        color: white;
+        cursor: pointer;
+
+        >img {
+            width: 5em;
+        }
+    }
+
+    >nav {
+        width: 70%;
+        display: flex;
+        align-items: center;
+
+        >ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            >li>a {
+                font: bold 1.2em 'Arial';
+                color: white;
+                text-decoration: none;
+            }
+
+            >li:hover>a {
+                color: rgb(19, 17, 17);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+button {
+    cursor: pointer;
+    font: bold 1em 'Arial';
+    color: white;
+    padding: 13px 50px;
+    background-image: linear-gradient(to right, rgb(66, 54, 54), rgb(61, 34, 34), rgb(71, 38, 38));
+    border-radius: 30px;
+    border: none;
+    transition: 0.5s;
+}
+
+header>nav>ul>li>button:hover {
+    box-shadow: 10px 5px 20px rgb(238, 175, 130);
+}
+
+header>div.burger {
+    display: none;
+}
+
+div#linkAku {
+    display: none;
+    padding: 30px 0;
+    transition: .5s;
+    background-color: rgb(80, 67, 45);
+    border-top: 1px solid white;
+}
+
+div#linkAku>a {
+    text-align: center;
+    font: bold 1.2em 'Arial', 'sans-serif';
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-bottom: 1px solid white;
+}
+
+div#linkAku>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+
+main>div.kotakbesar>div.kotakgambar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+    justify-items: center;
+    /* align-items: center; */
+    >figure {
+        width: 21em;
+        height: 300px;
+        background-color: rgb(75, 51, 51);
+        border-radius: 20px;
+
+        >a>img {
+            width: 100%;
+            aspect-ratio: 3/2;
+            border-radius: 30px;
+
+        }
+
+        >figcaption {
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+        }
+    }
+    >figure:hover{
+        background-color: rgb(17, 125, 76);
+    }
+}
+
+
+main>div.kotakbesar>div.nowshowing{
+    padding-bottom: 30px;
+    padding-left: 2%;   
+    >a{
+        text-decoration: none;
+        color: black;
+    }
+    >a:hover{
+        color: green;
+    }
+}
+main>div.kotakbesar>video{
+    width: 99%;
+    border-radius: 20px;
+    border: solid 2px;
+}
+
+
+body>footer>div.palingbawah{
+
+    /* display: flex; */
+    background-color:  rgb(16, 12, 12);
+    height: 60px;
+    margin-top: 20px;
+
+    
+    >p{
+        /* margin-left: 30%; */
+        text-align: center;
+        margin-top: 27px;
+        color: white;
+        font-size: small;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1159px) {
+
+    main>div.kotakbesar>div.kotakgambar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 40px;
+         justify-items: center;
+
+        /* align-items: center; */
+        >figure {
+            width: 21em;
+            height: 300px;
+            background-color: rgb(75, 51, 51);
+            border-radius: 20px;
+
+            >img {
+                width: 100%;
+                aspect-ratio: 3/2;
+                border-radius: 30px;
+
+            }
+
+            >figcaption {
+                text-align: center;
+                font-size: 20px;
+                color: wheat;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:900px) {
+
+    header>nav {
+        display: none;
+    }
+
+    header>div.burger {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    .g1,
+    .g2,
+    .g3 {
+        width: 34px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: white;
+        transition: .5s;
+    }
+
+    .change>.g1 {
+        transform: translate(0, 11px) rotate(45deg);
+    }
+
+    .change>.g2 {
+        opacity: 0;
+    }
+
+    .change>.g3 {
+        transform: translate(0, -11px) rotate(-45deg);
+    }
+}
+
+
+@media only screen and (max-width:700px) {
+
+    main>div.kotakbesar {
+    
+        >div.kotakgambar {
+            justify-items: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 50px;
+            >figure {
+
+                width: 21em;
+                height: 300px;
+                background-color: rgb(75, 51, 51);
+                border-radius: 20px;
+
+                >img {
+                    width: 100%;
+                    aspect-ratio: 3/2;
+                    border-radius: 30px;
+
+                }
+
+                >figcaption {
+                    text-align: center;
+                    font-size: 20px;
+                    color: wheat;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+@media only screen and (max-width:600px) {
+    header {
+        padding: 30px 30px;
+    }
+
+    header>div.logo {
+        font-size: 1.5em;
+    }
+        
+}
+
+

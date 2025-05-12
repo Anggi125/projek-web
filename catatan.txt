@@ -1,0 +1,8 @@
+CATATAN:
+
+1.ketika masuk ke dalam tampilan musik mohon di perhatikan jaringan (data) akan terjadi eror 
+"atau" musik belum bisa di putar jika data(koneksi belum tersambung)
+
+2.di dalam tampilan musik gambar nya bisa di klik 
+
+
